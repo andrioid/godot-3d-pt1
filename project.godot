@@ -15,6 +15,12 @@ run/main_scene="uid://cs367bdyl5e04"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+
 [dotnet]
 
 project/assembly_name="pt-3d-1"

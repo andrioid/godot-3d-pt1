@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmc57nlsthlu8"]
+
+[ext_resource type="Script" uid="uid://5y6nxw3x1xva" path="res://game_board_3d.gd" id="1_pobp6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pobp6"]
+albedo_color = Color(0.117647, 0.501961, 0.321569, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pobp6"]
+material = SubResource("StandardMaterial3D_pobp6")
+size = Vector3(15, 2, 30)
+
+[node name="GameBoard3D" type="StaticBody3D"]
+script = ExtResource("1_pobp6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+unique_name_in_owner = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = SubResource("BoxMesh_pobp6")
